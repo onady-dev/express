@@ -1,0 +1,25 @@
+{
+	"name": "server",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"start": "nodemon bin/www.js",
+		"test": "NODE_ENV=test mocha api/*/*.spec.js --watch"
+	},
+	"license": "MIT",
+	"devDependencies": {
+		"mocha": "^9.2.2",
+		"morgan": "^1.10.0",
+		"nodemon": "^2.0.16",
+		"should": "^13.2.3",
+		"supertest": "^6.2.3",
+		"swagger-jsdoc": "^6.2.1",
+		"swagger-ui-express": "^4.3.0"
+	},
+	"dependencies": {
+		"body-parser": "^1.20.0",
+		"express": "^4.18.0",
+		"mysql2": "^2.3.3",
+		"sequelize": "^6.19.0"
+	}
+}
